@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고다니(godani)투어</title>
+    <!-- NEXON 폰트 추가 -->
+    <link href="https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 헤더 섹션 시작 -->
+    <header class="header">
+        <!-- 로고와 브랜드 이름을 담는 왼쪽 섹션 -->
+        <div class="header-left">
+            <img src="images/logo1.png" alt="로고" class="logo">
+            <h1 class="brand-name">고다니(godani)투어</h1>
+        </div>
+        
+        <!-- 메뉴 네비게이션 -->
+        <nav class="nav-menu">
+            <a href="#greeting">인사말</a>
+            <a href="#products">상품</a>
+            <a href="#reviews">후기</a>
+            <a href="#qna">Q&A</a>
+        </nav>
+        
+        <!-- 로그인 버튼 -->
+        <button class="login-btn">로그인</button>
+    </header>
+
+    <!-- 히어로 섹션 시작 -->
+    <section class="hero">
+        <!-- 캐러셀 컨테이너 -->
+        <div class="carousel">
+            <!-- 슬라이드 1 -->
+            <div class="slide">
+                <img src="images/hero01.jpg" alt="히어로 이미지 1">
+                <div class="slide-content">
+                    <h2 class="brand-title">고다니(godani)투어</h2>
+                    <h3>당신의 여행, 추억이 되다</h3>
+                    <p>여행의 시작부터 끝까지, 당신의 여정을 함께 합니다</p>
+                    <a href="https://smartstore.naver.com" target="_blank" class="cta-button">예약하기</a>
+                </div>
+            </div>
+
+            <!-- 슬라이드 2 -->
+            <div class="slide">
+                <img src="images/hero1.jpg" alt="히어로 이미지 2">
+                <div class="slide-content">
+                    <h2 class="brand-title">고다니(godani)투어</h2>
+                    <h3>쉽고 빠르게, 여행을 시작하다</h3>
+                    <p>계획에서 실현까지 고다니투어가 함께합니다</p>
+                    <a href="https://smartstore.naver.com" target="_blank" class="cta-button">예약하기</a>
+                </div>
+            </div>
+
+            <!-- 슬라이드 3 -->
+            <div class="slide">
+                <img src="images/hero03.jpg" alt="히어로 이미지 3">
+                <div class="slide-content">
+                    <h2 class="brand-title">고다니(godani)투어</h2>
+                    <h3>당신의 여행에 날개를, 날아오르다</h3>
+                    <p>꿈꾸던 여행이 현실이 될 것입니다</p>
+                    <a href="https://smartstore.naver.com" target="_blank" class="cta-button">예약하기</a>
+                </div>
+            </div>
+
+            <!-- 슬라이드 4 (새로 추가) -->
+            <div class="slide">
+                <img src="images/hero04.jpg" alt="히어로 이미지 4">
+                <div class="slide-content">
+                    <h2 class="brand-title">고다니(godani)투어</h2>
+                    <h3>특별한 순간, 특별한 여행</h3>
+                    <p>잊지 못할 추억을 만들어 드립니다</p>
+                    <a href="https://smartstore.naver.com" target="_blank" class="cta-button">예약하기</a>
+                </div>
+            </div>
+
+            <!-- 캐러셀 네비게이션 버튼 -->
+            <button class="carousel-btn prev">&lt;</button>
+            <button class="carousel-btn next">&gt;</button>
+        </div>
+    </section>
+
+    <!-- 제품 섹션 시작 -->
+    <section class="products" id="products">
+        <!-- 대표 이미지 -->
+        <div class="shop-image">
+            <img src="images/hero03.jpg" alt="매장 대표 이미지">
+        </div>
+
+        <!-- 제품 타이틀 -->
+        <h1 class="product-title">고다니투어 상품 안내</h1>
+
+        <!-- 제품 그리드 -->
+        <div class="product-grid">
+            <!-- 제품 1 -->
+            <div class="product-card">
+                <img src="images/pd1.jpg" alt="제품1 이미지">
+                <div class="product-info">
+                    <h3>국내 패키지 여행</h3>
+                    <div class="product-description">
+                        <p>전국 주요 관광지 패키지 여행</p>
+                        <p>전문 가이드와 함께하는 알찬 여행</p>
+                        <p>편안한 이동과 숙박이 포함된 패키지</p>
+                    </div>
+                    <div class="product-description-full">
+                        <p>전국 주요 관광지 패키지 여행</p>
+                        <p>전문 가이드와 함께하는 알찬 여행</p>
+                        <p>편안한 이동과 숙박이 포함된 패키지</p>
+                        <p>기간: 1박2일 ~ 4박5일</p>
+                        <p>가격: 15만원 ~ 50만원</p>
+                        <p>* 인원과 일정에 따라 가격 변동 가능</p>
+                    </div>
+                    <button class="read-more-btn">더보기</button>
+                </div>
+            </div>
+
+            <!-- 제품 2 -->
+            <div class="product-card">
+                <img src="images/pd2.jpg" alt="제품2 이미지">
+                <div class="product-info">
+                    <h3>해외 패키지 여행</h3>
+                    <div class="product-description">
+                        <p>세계 각국 주요 도시 패키지 여행</p>
+                        <p>현지 가이드와 함께하는 전문 투어</p>
+                        <p>항공, 숙박, 투어가 모두 포함된 패키지</p>
+                    </div>
+                    <div class="product-description-full">
+                        <p>세계 각국 주요 도시 패키지 여행</p>
+                        <p>현지 가이드와 함께하는 전문 투어</p>
+                        <p>항공, 숙박, 투어가 모두 포함된 패키지</p>
+                        <p>기간: 3박4일 ~ 7박8일</p>
+                        <p>가격: 100만원 ~ 300만원</p>
+                        <p>* 목적지와 일정에 따라 가격 변동 가능</p>
+                    </div>
+                    <button class="read-more-btn">더보기</button>
+                </div>
+            </div>
+
+            <!-- 제품 3 -->
+            <div class="product-card">
+                <img src="images/pd3.jpg" alt="제품3 이미지">
+                <div class="product-info">
+                    <h3>맞춤형 자유여행</h3>
+                    <div class="product-description">
+                        <p>고객 맞춤형 자유여행 설계</p>
+                        <p>항공, 숙박, 투어 개별 예약 가능</p>
+                        <p>전문가의 맞춤형 일정 컨설팅</p>
+                    </div>
+                    <div class="product-description-full">
+                        <p>고객 맞춤형 자유여행 설계</p>
+                        <p>항공, 숙박, 투어 개별 예약 가능</p>
+                        <p>전문가의 맞춤형 일정 컨설팅</p>
+                        <p>기간: 고객 희망 일정</p>
+                        <p>가격: 개별 견적</p>
+                        <p>* 상담을 통한 맞춤 견적 제공</p>
+                    </div>
+                    <button class="read-more-btn">더보기</button>
+                </div>
+            </div>
+
+            <!-- 제품 4 -->
+            <div class="product-card">
+                <img src="images/pd4.jpg" alt="제품4 이미지">
+                <div class="product-info">
+                    <h3>특별 체험 투어</h3>
+                    <div class="product-description">
+                        <p>특별한 체험과 함께하는 테마여행</p>
+                        <p>현지 문화 체험 및 액티비티</p>
+                        <p>소규모 그룹 맞춤형 투어</p>
+                    </div>
+                    <div class="product-description-full">
+                        <p>특별한 체험과 함께하는 테마여행</p>
+                        <p>현지 문화 체험 및 액티비티</p>
+                        <p>소규모 그룹 맞춤형 투어</p>
+                        <p>기간: 1일 ~ 3일</p>
+                        <p>가격: 20만원 ~ 100만원</p>
+                        <p>* 체험 내용에 따라 가격 변동 가능</p>
+                    </div>
+                    <button class="read-more-btn">더보기</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 리뷰 섹션 시작 -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title">고객 후기</h2>
+            <div class="reviews-grid">
+                <!-- 리뷰 1 -->
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">
+                        "제주도 패키지 여행 정말 좋았습니다! 가이드님도 친절하시고, 일정도 여유있게 잘 짜여져 있어서 편안하게 여행했어요. 특히 맛집 추천이 대박이었습니다!"
+                    </p>
+                    <div class="reviewer">김서연 사장님</div>
+                </div>
+
+                <!-- 리뷰 2 -->
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">
+                        "일본 오사카 자유여행 컨설팅 받았는데, 세세한 부분까지 꼼꼼하게 설계해주셔서 너무 감동이었어요. 현지 교통편부터 숙소까지 완벽했습니다!"
+                    </p>
+                    <div class="reviewer">이민호 사장님</div>
+                </div>
+
+                <!-- 리뷰 3 -->
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">
+                        "가족여행으로 강원도 패키지 선택했는데, 아이들도 너무 좋아했어요. 체험 프로그램이 다양해서 지루할 틈이 없었습니다."
+                    </p>
+                    <div class="reviewer">박지원 사장님</div>
+                </div>
+
+                <!-- 리뷰 4 -->
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">
+                        "유럽 패키지 여행 정말 만족스러웠습니다. 전문적인 가이드 설명으로 각 도시의 역사와 문화를 깊이 이해할 수 있었어요."
+                    </p>
+                    <div class="reviewer">최현우 사장님</div>
+                </div>
+
+                <!-- 리뷰 5 -->
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">
+                        "베트남 다낭 자유여행 일정 짜주셨는데, 현지 맛집과 명소를 완벽하게 추천해주셔서 알찬 여행이 되었습니다!"
+                    </p>
+                    <div class="reviewer">정수빈 사장님</div>
+                </div>
+
+                <!-- 리뷰 6 -->
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">
+                        "태국 방콕 패키지가 가성비 최고였어요. 호텔부터 투어까지 모든 면에서 기대 이상이었습니다. 다음에도 꼭 이용하고 싶어요!"
+                    </p>
+                    <div class="reviewer">장미영 사장님</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 인사말 섹션 시작 -->
+    <section class="greeting" id="greeting">
+        <div class="container">
+            <h2 class="section-title">CEO 인사말</h2>
+            <div class="greeting-content">
+                <!-- CEO 이미지 -->
+                <div class="ceo-image">
+                    <img src="images/GODANI.jpg" alt="CEO 이미지">
+                </div>
+                
+                <!-- 인사말 텍스트 -->
+                <div class="greeting-text">
+                    <div class="message-preview">
+                        <p>여러분들의 안전하고 평생 기억에 남을 여행을 함께하는 그것이 저의 사명입니다.</p>
+                        <p>안녕하십니까? 52개국을 여행하고 500편 이상을 비행한 godani입니다</p>
+                        <p>2024년 한해에만 내돈내산으로 132편의 비행을 한 경험이 있습니다</p>
+                        <p>저는 중의사 자격증을 소유하고 있으며 </p>
+                    </div>
+                    <div class="message-full">
+                        <p>여러분들의 안전하고 평생 기억에 남을 여행을 함께하는 그것이 저의 사명입니다.</p>
+                        <p>안녕하십니까? 52개국을 여행하고 500편 이상을 비행한 godani입니다</p>
+                        <p>2024년 한해에만 내돈내산으로 132편의 비행을 한 경험이 있습니다</p>
+                        <p>저는 중의사 자격증을 소유하고 있으며 </p>
+                        <p>1일1블로그 포스팅을 한지 어느덧 1년10개월이 넘었고 이웃수7030여명의 블로그명 고다니투어(Let's go Daniel)을 운영하고 있어요</p>
+                        <p>대한민국 NO1.을 표방하는 아이비리그투어와 미서부 명문대학투어를 운영하고 있으며 </p>
+                        <p>노팁,노옵션,노쇼핑의 타여행사의 상품과는 차별되는 품격 여행을 운영하고 있어요</p>
+                        <p>꼭 한번 경험해 보시길 바랍니다 </p>
+                        <p>감사합니다</p>
+                        <div class="ceo-sign">
+                            <p>고다니(godani)투어</p>
+                            <p>대표 송민우</p>
+                        </div>
+                    </div>
+                    <button class="read-more-btn">더보기</button>
+                    <button class="read-less-btn">접기</button>
+                </div>
+            </div>
+            
+            <!-- 고객센터 정보 -->
+            <div class="contact-info">
+                <p>상담이 필요하시면, 고다니투어 고객센터로 연락주십시오.</p>
+                <p class="phone-numbers">010-2173-2707</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Q&A 섹션 시작 -->
+    <section class="qna" id="qna">
+        <div class="container">
+            <h2 class="section-title">Q&amp;A</h2>
+            <!-- 질문 작성 폼 -->
+            <form class="qna-form">
+                <label for="qna-title">질문 제목</label>
+                <input type="text" id="qna-title" name="qna-title" required placeholder="질문 제목을 입력하세요">
+                <label for="qna-content">질문 내용</label>
+                <textarea id="qna-content" name="qna-content" rows="4" required placeholder="질문 내용을 입력하세요"></textarea>
+                <button type="submit" class="qna-submit-btn">질문하기</button>
+            </form>
+            <!-- 질문 접수 메시지 -->
+            <div class="qna-reply" style="display:none;">
+                질문이 접수되었습니다. 곧 이메일로 답변 드리겠습니다.
+            </div>
+
+            <!-- FAQ 리스트 -->
+            <div class="faq">
+                <h3>자주 묻는 질문</h3>
+                <div class="faq-item">
+                    <div class="faq-q">Q: 타여행사와 차별되는 포인트가 어떻게 되나요?</div>
+                    <div class="faq-a">→ 노팁,노옵션,노쇼핑으로 현지에서 반드시 봐야하고 맛보아야하고 해야하는 것 위주로 투어가 진행되어요</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">Q: 최소 출발인원은 몇명인가요?</div>
+                    <div class="faq-a">→ 오픈기념으로 올해 2025년까지는 한분이라도 신청하시면 무조건 출발이에요요</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">Q: 소아포함 미성년자의 가격은 어떻게 되나요?</div>
+                    <div class="faq-a">→ 해당 항공사의 정책에 따라 가격이 차등될 수 있구요 호텔 역시 아이와 함께 이용시 아이의 상품가격은 조정될거예요요</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">Q:?</div>
+                    <div class="faq-a">→ 총 3개의 대안을 제안드리며, 그중 1개를 최종 선택하실 수 있습니다.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">Q: 브랜드 스토리는 어떤 분량으로 제공되나요?</div>
+                    <div class="faq-a">→ 600자 / 400자 / 200자 3가지 분량으로 제공됩니다.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 시작 -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">이용약관</a> | <a href="#">개인정보처리방침</a>
+        </div>
+        <div class="footer-info">
+            고객센터 010-2173-2707<br>
+            운영시간 오전10시~ 오후 6시(주말, 공휴일 제외)<br>
+            주소 대구광역시 수성구 동대구로95 108동B1층1-101 아고라11호<br>
+            사업자등록번호 450-40-01272<br>
+            통신판매업신고 <br>
+            업체명 고다니(godani)투어<br>
+            대표 송민우<br>
+            개인정보관리 책임자 송민우 <a href="mailto:daifudaniel@naver.com">daifudaniel@naver.com</a>
+        </div>
+        <div class="footer-social">
+            <a href="https://instagram.com" target="_blank" aria-label="인스타그램"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" aria-label="페이스북"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://youtube.com" target="_blank" aria-label="유튜브"><i class="fab fa-youtube"></i></a>
+            <a href="https://blog.naver.com" target="_blank" aria-label="블로그"><i class="fas fa-blog"></i></a>
+        </div>
+        <div class="footer-copy">
+            COPYRIGHT 고다니(godani)투어.All rights reserved.
+        </div>
+    </footer>
+    <!-- Font Awesome 아이콘 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="script.js"></script>
+</body>
+</html> 
