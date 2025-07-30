@@ -2,8 +2,8 @@
   "name": "고다니투어 - 안전하고 평생 기억에 남을 여행",
   "short_name": "고다니투어",
   "description": "52개국을 여행한 전문가와 함께하는 품격있는 여행 서비스",
-  "start_url": "/index.html",
-  "scope": "/",
+  "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#333333",
@@ -67,14 +67,14 @@
       "name": "상품보기",
       "short_name": "상품",
       "description": "여행 상품 둘러보기",
-      "url": "/index.html#products",
+      "url": "./index.html#products",
       "icons": [{ "src": "images/logo1.png", "sizes": "192x192" }]
     },
     {
       "name": "후기보기",
       "short_name": "후기",
       "description": "고객 후기 확인하기",
-      "url": "/index.html#reviews",
+      "url": "./index.html#reviews",
       "icons": [{ "src": "images/logo1.png", "sizes": "192x192" }]
     }
   ]

@@ -1,29 +1,29 @@
-const CACHE_NAME = 'godani-tour-v2';
-const STATIC_CACHE = 'godani-static-v2';
-const DYNAMIC_CACHE = 'godani-dynamic-v2';
+const CACHE_NAME = 'godani-tour-v3';
+const STATIC_CACHE = 'godani-static-v3';
+const DYNAMIC_CACHE = 'godani-dynamic-v3';
 
 // Core files to cache immediately
 const coreAssets = [
-  '/',
-  '/index.html',
-  '/styles.css',
-  '/script.js',
-  '/manifest.json',
-  '/images/logo1.png'
+  './',
+  './index.html',
+  './styles.css',
+  './script.js',
+  './manifest.json',
+  './images/logo1.png'
 ];
 
 // Additional assets to cache
 const assets = [
-  '/images/hero01.jpg',
-  '/images/hero1.jpg',
-  '/images/hero03.jpg',
-  '/images/hero04.jpg',
-  '/images/shop1.jpg',
-  '/images/pd1.jpg',
-  '/images/pd2.jpg',
-  '/images/pd3.jpg',
-  '/images/pd4.jpg',
-  '/images/man3.jpg'
+  './images/hero01.jpg',
+  './images/hero1.jpg',
+  './images/hero03.jpg',
+  './images/hero04.jpg',
+  './images/shop1.jpg',
+  './images/pd1.jpg',
+  './images/pd2.jpg',
+  './images/pd3.jpg',
+  './images/pd4.jpg',
+  './images/man3.jpg'
 ];
 
 // Install event - cache core resources
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
             
             // For HTML requests, return the main page
             if (request.headers.get('accept').includes('text/html')) {
-              return caches.match('/index.html');
+              return caches.match('./index.html');
             }
             
             // For other requests, return a simple offline response
