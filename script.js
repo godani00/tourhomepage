@@ -1,15 +1,91 @@
-// Service Worker 등록 (PWA 기능)
+// Service Worker 등록 및 PWA 기능
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js')
       .then((registration) => {
-        console.log('SW registered: ', registration);
+        console.log('[PWA] Service Worker registered successfully:', registration);
+        
+        // 업데이트 확인
+        registration.addEventListener('updatefound', () => {
+          const newWorker = registration.installing;
+          newWorker.addEventListener('statechange', () => {
+            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+              // 새 버전 사용 가능 알림 (선택사항)
+              console.log('[PWA] New version available. Refresh to update.');
+            }
+          });
+        });
       })
       .catch((registrationError) => {
-        console.log('SW registration failed: ', registrationError);
+        console.log('[PWA] Service Worker registration failed:', registrationError);
       });
   });
 }
+
+// PWA 설치 프롬프트 처리
+let deferredPrompt;
+const installButton = document.createElement('button');
+installButton.textContent = '앱 설치';
+installButton.style.cssText = `
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #333;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+  font-family: 'NexonLv1Gothic', sans-serif;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+`;
+
+// 설치 프롬프트 이벤트 리스너
+window.addEventListener('beforeinstallprompt', (e) => {
+  console.log('[PWA] Install prompt available');
+  e.preventDefault();
+  deferredPrompt = e;
+  
+  // 설치 버튼 표시
+  document.body.appendChild(installButton);
+  installButton.style.display = 'block';
+});
+
+// 설치 버튼 클릭 이벤트
+installButton.addEventListener('click', () => {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then((choiceResult) => {
+      if (choiceResult.outcome === 'accepted') {
+        console.log('[PWA] User accepted the install prompt');
+      } else {
+        console.log('[PWA] User dismissed the install prompt');
+      }
+      deferredPrompt = null;
+      installButton.style.display = 'none';
+    });
+  }
+});
+
+// 앱이 설치되었을 때
+window.addEventListener('appinstalled', () => {
+  console.log('[PWA] App was installed successfully');
+  installButton.style.display = 'none';
+  deferredPrompt = null;
+});
+
+// 온라인/오프라인 상태 감지
+window.addEventListener('online', () => {
+  console.log('[PWA] Back online');
+  // 온라인 상태 UI 업데이트 (선택사항)
+});
+
+window.addEventListener('offline', () => {
+  console.log('[PWA] Gone offline');
+  // 오프라인 상태 UI 업데이트 (선택사항)
+});
 
 // 로그인 버튼 클릭 이벤트
 document.querySelector('.login-btn').addEventListener('click', function() {
