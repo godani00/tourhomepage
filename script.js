@@ -195,29 +195,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// CEO 인사말 더보기/접기 기능
-document.addEventListener('DOMContentLoaded', function() {
-    const greetingMoreBtn = document.querySelector('.greeting .read-more-btn');
-    const greetingLessBtn = document.querySelector('.greeting .read-less-btn');
-    const messagePreview = document.querySelector('.message-preview');
-    const messageFull = document.querySelector('.message-full');
-
-    if (greetingMoreBtn && greetingLessBtn) {
-        greetingMoreBtn.addEventListener('click', function() {
-            messagePreview.style.display = 'none';
-            messageFull.style.display = 'block';
-            greetingMoreBtn.style.display = 'none';
-            greetingLessBtn.style.display = 'inline-block';
-        });
-
-        greetingLessBtn.addEventListener('click', function() {
-            messagePreview.style.display = 'block';
-            messageFull.style.display = 'none';
-            greetingMoreBtn.style.display = 'inline-block';
-            greetingLessBtn.style.display = 'none';
-        });
-    }
-});
+// CEO 인사말은 이제 전체 내용을 바로 표시하므로 더보기/접기 기능 제거됨
 
 // Q&A 질문 접수 메시지 기능
 document.addEventListener('DOMContentLoaded', function() {
